@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retrivex"
+version = "0.1.0"
+description = "Retrieval Models Explainability Toolkit. Explain embedding similarity prediction."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "LGPL-2.1-only"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Andrei Khobnia", email = "andrei.khobnia@gmail.com" },
+]
+keywords = [
+    "machine-learning",
+    "information-retrieval",
+    "explainability", 
+    "explainable-ai", 
+    "deep-learning",
+    "neural-network",
+    "transformers",
+    "model-explainability", 
+    "similarity", 
+    "embeddings",
+    "vector-search",
+    "embedding-explainability",
+    "similarity-explainability",
+    "transformer-model", 
+    "sentence-transformers"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "sentence-transformers>=4.1",
+  "matplotlib",
+]
+
+[urls]
+Homepage = "https://github.com/aikho/retrivex"
+Repository = "https://github.com/aikho/retrivex"
+Issues = "https://github.com/aikho/retrivex/issues"
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[tool.setuptools.packages.find]
+include = ["retrivex*"]
+exclude = ["docs*", "tests*"]
+
+[tool.black]
+target-version = ['py39', 'py310', 'py311', 'py312']
