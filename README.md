@@ -33,8 +33,14 @@ Explainability in information retrieval (IR) models is crucial because it helps 
 * _To Be Added Next:_ BiLRP explanability method in accordance to [Vasileiou & Eberle, NAACL 2024](https://aclanthology.org/2024.naacl-long.435/)
 
 ## Installation
+### From PyPI (Recommended)
+You need Python 3.9+ to run Retrivex toolkit. To install Retrivex toolkit from PyPI run the following command:
+```shell
+pip install retrivex
+```
+
 ### From sources
-You need Python 3.9+ to run code in this tutorial. To install retrivex toolkit from sources run the following command:
+You need Python 3.9+ to run Retrivex toolkit. To install Retrivex toolkit from sources run the following command:
 ```shell
 pip install git+https://github.com/aikho/retrivex.git
 ```
@@ -52,7 +58,7 @@ results = explainer.explain(
 plot_connections(*results)
 ```
 
-See more examples in the [Tutorial](tutorial.ipynb).
+See more examples in the [Tutorial](https://github.com/aikho/retrivex/blob/main/tutorial.ipynb).
 
 ## Documentation
 See toolkit API [documentation](https://aikho.github.io/retrivex)
